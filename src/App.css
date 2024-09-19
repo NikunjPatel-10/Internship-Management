@@ -1,0 +1,28 @@
+.today-marker {
+    position: relative;
+}
+
+.today-marker::after {
+    content: "Today";
+    background-color: #0078d4;
+    font-size: 11px;
+    color: #fff;
+    width: 60px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    left: 7px;
+    top: -55px;
+    /* z-index: 1000; */
+    position: absolute;
+}
+
+.today-marker::before {
+    content: '';
+    width: 1px;
+    height: var(--before-height);
+    background-color: #1e95f0;
+    left: 7px;
+    top: -55px;
+    /* z-index: 1000; */
+    position: absolute;
+}
